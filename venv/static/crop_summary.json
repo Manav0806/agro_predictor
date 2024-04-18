@@ -1,0 +1,816 @@
+[
+    {
+        "content": "Rice (Oryza sativa) is a staple food for a large part of the world's human population. It is the most widely consumed staple food for a large part of the world's human population, especially in Asia. Rice cultivation is well-suited to countries and regions with low labor costs and high rainfall, as it requires plenty of water for cultivation. There are many varieties of rice, each with its own characteristics and uses.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.0 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1200 - 1800 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.6%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Clayey soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding or transplanting"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Grass"
+            }
+        }
+    },
+    {
+        "content": "Maize (Zea mays) is a widely cultivated cereal grain that was domesticated in Mesoamerica and then spread throughout the American continents. It is a staple food in many parts of the world, with the United States, China, and Brazil being the largest producers. Maize can be used for food, animal feed, and industrial products. It is known for its tall stalks and large ears with kernels that can vary in color.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.2 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Tall annual grass"
+            }
+        }
+    },
+    {
+        "content": "Chickpea (Cicer arietinum) is a legume known for its nutty flavor and rich protein content. It is a staple in Middle Eastern, Mediterranean, and Indian cuisines, used in dishes like hummus, falafel, and curries. Chickpeas are high in fiber, vitamins, and minerals, making them a nutritious food choice.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "300 - 400 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.3%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.2 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in winter, harvested in spring"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Kidney beans (Phaseolus vulgaris) are a variety of common beans known for their shape and color resembling a kidney. They are a popular ingredient in various cuisines, including Mexican, Indian, and Caribbean. Kidney beans are rich in protein, fiber, and various vitamins and minerals.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "400 - 600 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.3 - 0.6%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.2 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Pigeon peas (Cajanus cajan) are a perennial legume from the family Fabaceae. They are cultivated for their edible seeds, which have a high protein content. Pigeon peas are a common food ingredient in many tropical and subtropical regions and are known for their drought tolerance.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.0 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "600 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.4%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy loam to clay loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding or transplanting"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Woody perennial shrub"
+            }
+        }
+    },
+    {
+        "content": "Mothbeans (Vigna aconitifolia) are a drought-resistant legume grown mainly in arid and semi-arid regions of India. They are known for their small, mottled seeds and are a good source of protein, vitamins, and minerals. Moth beans are used in various dishes, including curries, soups, and salads.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "300 - 500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy loam to clay loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in summer, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Mung beans (Vigna radiata) are small, green legumes commonly cultivated in Asia. They are a versatile crop used in various dishes, including soups, curries, and salads. Mung beans are known for their high protein and fiber content, as well as their adaptability to different climates.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "400 - 800 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in summer"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Black gram (Vigna mungo) is a type of pulse cultivated for its edible seeds. It is popular in South Asia, where it is used to make dal, a thick stew. Black gram is rich in protein and fiber, making it a nutritious addition to the diet. It is known for its strong flavor and is often used in Indian cuisine.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 600 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.4%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.2 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy loam to clay loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in summer, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Lentils (Lens culinaris) are edible pulses that belong to the legume family. They are a staple food in many parts of the world and are known for their lens-shaped seeds. Lentils are rich in protein, fiber, and various nutrients, making them a nutritious addition to the diet. They are used in a variety of dishes, including soups, stews, and salads.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "300 - 600 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.3%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in summer"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Bushy annual"
+            }
+        }
+    },
+    {
+        "content": "Pomegranate (Punica granatum) is a fruit-bearing deciduous shrub or small tree. It is widely cultivated for its edible fruit, which is typically eaten fresh or used in cooking. The fruit is rich in antioxidants and vitamins, making it a popular choice for its health benefits. Pomegranates are also used in traditional medicine and religious rituals.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.1 - 0.3%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in autumn"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Transplanting"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Shrub or small tree"
+            }
+        }
+    },
+    {
+        "content": "Banana (Musa spp.) is a tropical fruit that is widely cultivated for its edible fruit. It is a staple food in many parts of the world and is known for its sweet taste and creamy texture. Bananas are rich in vitamins, minerals, and fiber, making them a nutritious addition to the diet. They are also used in cooking and baking.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1000 - 2500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Suckers or tissue culture"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Herbaceous perennial"
+            }
+        }
+    },
+    {
+        "content": "Mango (Mangifera indica) is a tropical fruit known for its sweet and juicy flavor. It is cultivated in many tropical and subtropical regions and is popular for its taste and nutritional value. Mangoes are rich in vitamins, minerals, and antioxidants, making them a healthy addition to the diet. They are eaten fresh, used in cooking, or processed into juices, jams, and preserves.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1000 - 2500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.3 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Grafting or seed"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Large evergreen tree"
+            }
+        }
+    },
+    {
+        "content": "Grapes (Vitis vinifera) are a type of fruit that grow in clusters on vines. They are cultivated for their sweet and juicy berries, which can be eaten fresh or used to make wine, juice, and dried fruits like raisins. Grapes are rich in vitamins, minerals, and antioxidants, making them a healthy choice for snacks and desserts.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 6.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "600 - 800 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.3 - 0.6%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Cuttings or grafts"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Vining perennial"
+            }
+        }
+    },
+    {
+        "content": "Watermelon (Citrullus lanatus) is a fruit known for its sweet and refreshing taste. It is cultivated in many warm regions around the world and is popular for its high water content and nutritional value. Watermelons are eaten fresh or used in salads, smoothies, and desserts. They are rich in vitamins, minerals, and antioxidants.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.4%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy loam to clay loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in summer"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Vining annual"
+            }
+        }
+    },
+    {
+        "content": "Muskmelon (Cucumis melo) is a type of melon known for its sweet and musky aroma. It is cultivated in many warm regions and is popular for its juicy and flavorful flesh. Muskmelons are eaten fresh or used in salads, smoothies, and desserts. They are rich in vitamins, minerals, and antioxidants.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.4%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy loam to clay loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Planted in spring, harvested in summer"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Direct seeding"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Vining annual"
+            }
+        }
+    },
+    {
+        "content": "Apple (Malus domestica) is a widely cultivated fruit crop known for its sweet, juicy taste. It thrives in well-drained soil, blooms in spring, and ripens in late summer. Rich in fiber and vitamins, apples are versatile, used in pies, sauces, and juices, and are a dietary staple globally. The fruit comes in a variety of colors and flavors, with thousands of cultivars available.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.0 - 6.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "500 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Grafting or seed"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Large deciduous tree"
+            }
+        }
+    },
+    {
+        "content": "Orange (Citrus sinensis) is a citrus fruit known for its sweet and tangy flavor. It is cultivated in many tropical and subtropical regions and is popular for its juice and vitamin C content. Oranges are eaten fresh, used in cooking and baking, and processed into juice and preserves. They are rich in vitamins, minerals, and antioxidants.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "600 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.3%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seeds, grafting, or cuttings"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Evergreen tree"
+            }
+        }
+    },
+    {
+        "content": "Papaya (Carica papaya) is a tropical fruit known for its sweet and musky flavor. It is cultivated in many tropical regions and is popular for its juicy and flavorful flesh. Papayas are eaten fresh, used in salads, and processed into juices and preserves. They are rich in vitamins, minerals, and antioxidants.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1000 - 1500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.3 - 0.6%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "6 - 9 months"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seeds or seedlings"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Small tree or shrub"
+            }
+        }
+    },
+    {
+        "content": "Coconut (Cocos nucifera) is a tropical fruit known for its sweet and refreshing taste. It is cultivated in many tropical regions and is popular for its water, milk, oil, and flesh. Coconuts are used in cooking, baking, and beverages, and their byproducts are used in various industries. They are rich in vitamins, minerals, and healthy fats.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 8.0"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1000 - 2500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.6%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Sandy or loamy soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "Varies by variety"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seed nuts"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Palm tree"
+            }
+        }
+    },
+    {
+        "content": "Cotton (Gossypium spp.) is a soft, fluffy fiber that grows in a boll around the seeds of the cotton plant. It is cultivated in many countries for its fiber, which is used to make textiles, clothing, and other products. Cotton is a major cash crop in many economies and is an important agricultural commodity.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "5.5 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "600 - 1000 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.2 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained loamy soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "120 - 180 days"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seeds"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Herbaceous annual"
+            }
+        }
+    },
+    {
+        "content": "Jute (Corchorus olitorius) is a long, soft, shiny vegetable fiber that can be spun into coarse, strong threads. It is produced from plants in the genus Corchorus, which is native to the Indian subcontinent and is grown throughout the tropical regions of the world. Jute is used to make burlap, hessian, and other fabrics, as well as ropes and twine.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 7.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1000 - 1500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.3 - 0.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.1 - 0.4%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained loamy soil"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "4 - 5 months"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seeds"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Herbaceous annual"
+            }
+        }
+    },
+    {
+        "content": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. Once ripe, coffee berries are picked, processed, and dried. Dried coffee seeds (referred to as beans) are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed with near-boiling water to produce coffee as a beverage.",
+        "crop-info": {
+            "row1": {
+                "heading": "ph",
+                "values": "6.0 - 6.5"
+            },
+            "row2": {
+                "heading": "rain",
+                "values": "1500 - 2500 mm"
+            },
+            "row3": {
+                "heading": "k",
+                "values": "0.5 - 1.5%"
+            },
+            "row4": {
+                "heading": "p",
+                "values": "0.2 - 0.5%"
+            },
+            "row5": {
+                "heading": "soil type",
+                "values": "Well-drained, sandy loam"
+            },
+            "row6": {
+                "heading": "crop timeline",
+                "values": "3 - 5 years to mature, then yearly harvest"
+            },
+            "row7": {
+                "heading": "Sowing Method",
+                "values": "Seeds or seedlings"
+            },
+            "row8": {
+                "heading": "Growth Habit",
+                "values": "Shrub or small tree"
+            }
+        }
+    }
+]

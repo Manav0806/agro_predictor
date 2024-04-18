@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Website</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <section class="head">
+        <div class="navbar">
+            <div class="logo flex-item grow">
+                <h1>Argo Predictor</h1>
+            </div>
+            <nav class="responsive flex-item" id="n">
+                <li><a href="#" style="color: blue;">Home</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Crop Predictor</a></li>
+                <li><a href="#">Price Predictor</a></li>
+                <li><a href="#">About</a></li>
+            </nav>
+            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem;" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div class="main">
+            <div>
+                <h2>Agro Predictor</h2>
+                <p>Get personalized recommendations for fertilizer and crops based on your land's characteristics.</p>
+            </div>
+            <div class="imghome"><img src="static/assets/doct.webp" alt=""></div>
+        </div>
+        <div id="col" class="col-remove"></div>
+    </section>
+    <section class="services">
+        <h2>Our <span>Services</span></h2>
+        <div class="cards">
+            <div class="card">
+                <img src="static/assets/cards/crop.png" alt="">
+                <div class="info">
+                    <h4>Crop Finder</h4>
+                    <p>Get to know which crop is best suited for your soil, for maximum yield</p>
+                    <button><a href="crop_finder.html">Click me</a></button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="static/assets/cards/cost.jpg" alt="">
+                <div class="info">
+                    <h4>Yield Calculator</h4>
+                    <p>Calculate your Yield of the crop you are gonna grow, have a clear idea of your crop Yield.</p>
+                    <button><a href="forms/index.html">Click me</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Welcome to our agro website, dedicated to providing farmers and agricultural enthusiasts with valuable
+                insights and predictions for optimizing crop cultivation and fertilizer usage. Our mission is to empower
+                farmers with data-driven recommendations that enhance crop yield, profitability, and sustainability.</p>
+            <p>With our advanced algorithms and machine learning models, we analyze soil quality, climate conditions,
+                and historical data to offer personalized advice tailored to your specific land and crop requirements.
+                Whether you're a small-scale farmer or a large agricultural enterprise, our tools and recommendations
+                can help you make informed decisions that benefit both your crops and the environment.</p>
+            <p>Our team of agricultural experts, data scientists, and software engineers is passionate about
+                revolutionizing the way farming is approached. We strive to bridge the gap between traditional farming
+                practices and modern technology, ensuring that farmers have access to the latest innovations and
+                insights to thrive in today's agricultural landscape.</p>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Agro Predictor. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("n");
+        if (x.className === "navigation") {
+            x.className = " responsive";
+        } else {
+            x.className = "navigation";
+        }
+        
+        var x = document.getElementById("col")
+        if (x.className === "col-show") {
+            x.className = "col-remove";
+        } else {
+            x.className = "col-show";
+        }
+    }</script>
+
+</html>

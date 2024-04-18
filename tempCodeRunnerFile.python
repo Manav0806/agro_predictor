@@ -1,0 +1,6 @@
+crop = ['rice', 'maize', 'chickpea', 'kidneybeans', 'pigeonpeas', 'mothbeans', 'mungbean', 'blackgram', 'lentil', 'pomegranate', 'banana', 'mango', 'grapes', 'watermelon', 'muskmelon', 'apple', 'orange', 'papaya', 'coconut', 'cotton', 'jute', 'coffee']
+
+predicted_value = "cotton"
+
+img_src_index = crop.index(predicted_value)
+print(img_src_index)

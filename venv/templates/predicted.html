@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/predicted_style.css">
+    <script src="/static/script.js"></script>
+</head>
+
+<body>
+    <section class="head">
+        <div class="navbar">
+            <div class="logo flex-item grow">
+                <h1>Argo Predictor</h1>
+            </div>
+            <nav class="responsive flex-item" id="n">
+                <li><a href="/index.html" style="color: blue;">Home</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="./forms/index.html">Crop Predictor</a></li>
+                <li><a href="#">Price Predictor</a></li>
+                <li><a href="#">About</a></li>
+            </nav>
+            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem;"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div class="main">
+
+            <div class="imghome">
+                <img id="myImage" src="{{img_src}}" alt="Image">
+            </div>
+            <div>
+                <h2 id="name">{{predicted_value}}</h2>
+
+                <div class="info">
+                    <p class="content">{{crop_info['content']}}</p>
+                    <div class="crop-info">
+                        <div class="row row1">
+                            <h3 class="heading">ph</h3>
+                            <p class="values">{{crop_info['crop-info']['row1']['values']}}</p>
+                        </div>
+                        <div class="row row2">
+                            <h3 class="heading">rain</h3>
+                            <p class="values">{{crop_info['crop-info']['row2']['values']}}</p>
+                        </div>
+                        <div class="row row3">
+                            <h3 class="heading">k</h3>
+                            <p class="values">{{crop_info['crop-info']['row3']['values']}}</p>
+                        </div>
+                        <div class="row row4">
+                            <h3 class="heading">p</h3>
+                            <p class="values">{{crop_info['crop-info']['row4']['values']}}</p>
+                        </div>
+                        <div class="row row5">
+                            <h3 class="heading">soil type</h3>
+                            <p class="values">{{crop_info['crop-info']['row5']['values']}}</p>
+                        </div>
+                        <div class="row row6">
+                            <h3 class="heading">crop timeline</h3>
+                            <p class="values">{{crop_info['crop-info']['row6']['values']}}</p>
+                        </div>
+                        <div class="row row7">
+                            <h3 class="heading">Sowing Method:</h3>
+                            <p class="values">{{crop_info['crop-info']['row7']['values']}}</p>
+                        </div>
+                        <div class="row row8">
+                            <h3 class="heading">Growth Habit</h3>
+                            <p class="values">{{crop_info['crop-info']['row8']['values']}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="col" class="col-remove"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Agro Predictor. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
