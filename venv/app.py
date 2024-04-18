@@ -5,17 +5,17 @@ import pickle
 import json
 
 # loading crop image source json file
-with open('venv\crop_image_src.json') as user_file:
+with open('static/crop_image_src.json') as user_file:
     crop_img = user_file.read()
 
     crop_img_src = json.loads(crop_img)
 
 
-with open('crop_summary.json') as file:
+with open('static/crop_summary.json') as file:
     # Load the JSON data from the file
     crop_summary = json.load(file)
 
-with open('crop_name.json') as file:
+with open('static/crop_name.json') as file:
     # Load the JSON data from the file
     crop_name = json.load(file)
     
