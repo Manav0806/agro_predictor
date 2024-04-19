@@ -3,25 +3,21 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Millenia";
+    src: url("BordDemo-axaBa.otf") format("opentype");
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
 :root {
     --firstprimarycolor: #ffffff;
-    --navBackground: #ffe2e2;
+    --navBackground: rgb(233, 233, 233);
     --navTextColor: #000000;
     --navTextHover: #cfcfcf;
-    --navboxshadow: rgba(0, 0, 0, .07);
-
-    --mainTextcolor: #fff;
-    --mainlogocolor: #000000;
-
-    --servicesBackground: #2e9400;
-    --servicesTextcolor: rgb(255, 255, 255);
-    --servicesTextspancolor: rgb(255, 213, 0);
-
-    --shadow: rgba(0, 0, 0, 0.511);
+    --navboxshadow: rgba(0, 0, 0, 0.07);
 
     --aboutbackground: rgb(233, 233, 233);
     --aboutContent: rgb(233, 233, 233);
@@ -29,33 +25,13 @@
     --aboutp: black;
 }
 
-.night-theme {
-    --firstprimarycolor: #000000;
-    --navBackground: #000;
-    --navTextColor: #ffffff;
-    --navTextHover: #ffea00;
-    --mainTextcolor: #ffffff;
-    --mainlogocolor: #ffffff;
-
-    --mainTextcolor: #fff;
-
-    --servicesBackground: #2e9400;
-    --servicesTextcolor: rgb(255, 255, 255);
-    --servicesTextspancolor: rgb(255, 247, 0);
-
-    --shadow: rgba(255, 255, 255, 0.511);
-
-    --aboutbackground: rgb(0, 0, 0);
-    --aboutContent: rgb(0, 0, 0);
-    --abouth2: rgb(255, 255, 255);
-    --aboutp: rgb(255, 255, 255);
-}
-
-
 section {
     width: 100%;
     height: 170vh;
     background-color: var(--aboutbackground);
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .head {
@@ -68,12 +44,10 @@ a {
 
 .navbar {
     z-index: 5;
-    top: 0;
-    margin-left: 1.5vw;
-    margin-top: 1rem;
-    position: absolute;
-    width: 90vw;
-    height: 100px;
+    /* top: 0; */
+    position: relative;
+    width: 95vw;
+    height: 8vh;
     background-color: var(--navBackground);
     box-shadow: 10px 10px 12px 0 var(--navboxshadow);
     border-radius: 4px 4px 1rem 1rem;
@@ -85,15 +59,16 @@ a {
 }
 
 .logo {
+    font-family: Millenia;
     margin-right: auto;
     font-size: 1.2rem;
     color: dimgray;
     font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3), -2px -2px 4px rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+        -2px -2px 4px rgba(255, 255, 255, 1);
 }
 
 .navigation {
-
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -102,23 +77,26 @@ a {
     left: 0;
 
     li {
+        font-family: "Playfair Display", serif;
+        font-weight: 800;
+        font-style: italic;
         margin: 0 1rem;
         padding: 0.5rem 1.5rem;
-        border: 2px solid rgba(255, 255, 255, .3);
-        box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, .1), -4px -4px 6px rgba(255, 255, 255, 1);
+        /* border: 2px solid rgba(255, 255, 255, .3); */
+        /* box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, .1), -4px -4px 6px rgba(255, 255, 255, 1); */
         border-radius: 10px;
         cursor: pointer;
-        transition: color 0.2s ease-out, transform 0.2s ease-out;
+        transition: color 0.5s ease-out, transform 0.2s ease-out;
         color: dimgray;
 
         &:hover {
             transform: scale(1.05);
-            box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1);
+            /* box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1); */
         }
 
         &:focus {
             transform: scale(0.95);
-            box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px 0 rgba(0, 0, 0, .1) inset, -4px -4px 10px rgba(255, 255, 255, 1) inset;
+            /* box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px 0 rgba(0, 0, 0, .1) inset, -4px -4px 10px rgba(255, 255, 255, 1) inset; */
         }
 
         &:hover,
@@ -129,15 +107,11 @@ a {
 }
 
 .responsive {
-
     display: none;
 }
 
-
-
 /* ****************************************************************************** */
 .main {
-    z-index: 10;
     position: relative;
     width: 40vw;
     height: 130vh;
@@ -150,7 +124,6 @@ a {
     align-items: center;
     border-radius: 2rem;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-
 
     img {
         height: 30vh;
@@ -199,7 +172,6 @@ footer {
     display: none;
 }
 
-/* afaw****************************** */
 .info {
     display: flex;
     flex-direction: column;
@@ -213,7 +185,6 @@ footer {
         font-size: 1rem;
         padding: 5px 10px;
         margin-bottom: 1rem;
-
     }
 
     .crop-info {
@@ -222,10 +193,6 @@ footer {
         justify-content: flex-start;
         width: 24vw;
         border: 1px solid #ddd;
-        overflow: hidden;
-        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-            -9px -9px 16px rgba(255, 255, 255, 0.6);
-        border-radius: 1rem;
     }
 
     .row {
@@ -233,24 +200,6 @@ footer {
         width: 100%;
         justify-content: space-between;
         margin-bottom: 5px;
-        transition: transform 1s ease-in-out;
-    }
-
-    .row:hover {
-        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-            -9px -9px 16px rgba(255, 255, 255, 0.6);
-
-        h3,
-        p {
-            transform: scale(1.02);
-        }
-    }
-
-    .row:after {
-
-        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-            -9px -9px 16px rgba(255, 255, 255, 0.6);
-        z-index: -1;
     }
 
     .row h3,
@@ -258,7 +207,6 @@ footer {
         display: table-cell;
         padding: 5px 10px;
         border-bottom: 1px solid #ddd;
-
     }
 
     .row h3 {
@@ -273,44 +221,9 @@ footer {
         text-align: left;
         border-bottom: 1px solid #ddd;
     }
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
-
-
-    section {
-        height: 160vh;
-    }
-
-
     .col-show {
         position: fixed;
         top: 17px;
@@ -322,11 +235,11 @@ footer {
     }
 
     .navbar {
-        z-index: 15;
+        z-index: 5;
         top: 0;
         margin-left: 2vw;
         margin-top: 1rem;
-        position: absolute;
+        position: fixed;
         width: 88vw;
         height: 50px;
         background-color: var(--navBackground);
@@ -344,7 +257,8 @@ footer {
         font-size: 1.2rem;
         color: dimgray;
         font-weight: 900;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, .3), -2px -2px 4px rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+            -2px -2px 4px rgba(255, 255, 255, 1);
     }
 
     .navigation {
@@ -362,8 +276,9 @@ footer {
 
             margin: 1rem 0;
             padding: 0.5rem 1.5rem;
-            border: 2px solid rgba(255, 255, 255, .3);
-            box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, .1), -4px -4px 6px rgba(255, 255, 255, 1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
+                -4px -4px 6px rgba(255, 255, 255, 1);
             border-radius: 10px;
             cursor: pointer;
             transition: color 0.2s ease-out, transform 0.2s ease-out;
@@ -371,12 +286,16 @@ footer {
 
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1);
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+                    -4px -4px 10px rgba(255, 255, 255, 1);
             }
 
             &:focus {
                 transform: scale(0.95);
-                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px 0 rgba(0, 0, 0, .1) inset, -4px -4px 10px rgba(255, 255, 255, 1) inset;
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+                    -4px -4px 10px rgba(255, 255, 255, 1),
+                    4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
+                    -4px -4px 10px rgba(255, 255, 255, 1) inset;
             }
 
             &:hover,
@@ -392,39 +311,13 @@ footer {
 
     .main {
         width: 80vw;
-        height: auto;
-        padding: 8vh 0;
+        height: 70vh;
         top: 22vh;
         left: 10vw;
-
 
         img {
             height: 30vh;
             width: 70vw;
         }
     }
-
-
-
-
-    .info {
-
-
-        .crop-info {
-            width: 65vw;
-        }
-
-
-        .row h3 {
-            font-size: 0.9rem;
-        }
-
-        .row p {
-
-            font-size: 0.8rem;
-        }
-
-
-    }
-
 }

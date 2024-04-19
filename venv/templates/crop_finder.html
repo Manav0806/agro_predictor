@@ -6,54 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="/static/crop_finder.css" class="css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="\static\cities.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-            <div class="logo">
+    <section class="head">
+        <div class="navbar">
+            <div class="logo flex-item grow">
                 <h1>Argo Predictor</h1>
             </div>
-            <nav>
-                <li><a href="#" style="color: blue;">Home</a></li>
-                <li><a href="#">Weather</a></li>
+            <nav class="responsive flex-item" id="n">
+                <li id="curr"><a href="./index.html">Home</a></li>
                 <li><a href="#">Crop Predictor</a></li>
                 <li><a href="#">Price Predictor</a></li>
                 <li><a href="#">About</a></li>
-                <label class="switch">
-                    <input type="checkbox" id="themeToggle">
-                    <span class="slider round"></span>
-                </label>
             </nav>
-    </div>
-    <div class="container">
-        <form action="/predict" method="POST">
-            <label for="Nitrogen">Nitrogen</label>
-            <input type="number" id="Nitrogen" name="Nitrogen" required step="any" />
+            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="col" class="col-remove"></div>
+        <div class="container">
+            <form action="/predict" method="POST">
+                <label for="Nitrogen">Nitrogen</label>
+                <input type="number" id="Nitrogen" name="Nitrogen" required step="any" />
 
-            <label for="P">P:</label>
-            <input type="number" id="P" name="P" required step="any" />
+                <label for="P">P:</label>
+                <input type="number" id="P" name="P" required step="any" />
 
-            <label for="K">K:</label>
-            <input type="number" id="K" name="K" required step="any" />
+                <label for="K">K:</label>
+                <input type="number" id="K" name="K" required step="any" />
 
-            <label for="temperature">temperature:</label>
-            <input type="number" id="temperature" name="temperature" required step="any" />
-            
-            <label for="humidity">humidity:</label>
-            <input type="number" id="humidity" name="humidity" required step="any" />
-            
-            <label for="ph">ph:</label>
-            <input type="number" id="ph" name="ph" required step="any" />
-            
-            <label for="rainfall_In_mm">rainfall_In_mm:</label>
-            <input type="number" id="rainfall_In_mm" name="rainfall_In_mm" required step="any" />
+                <label for="temperature">temperature:</label>
+                <input type="number" id="temperature" name="temperature" required step="any" />
 
-            <input type="submit" value="predict" class="button" />
-        </form>
+                <label for="humidity">humidity:</label>
+                <input type="number" id="humidity" name="humidity" required step="any" />
+
+                <label for="ph">ph:</label>
+                <input type="number" id="ph" name="ph" required step="any" />
+
+                <label for="rainfall_In_mm">rainfall_In_mm:</label>
+                <input type="number" id="rainfall_In_mm" name="rainfall_In_mm" required step="any" />
+
+                <input type="submit" value="Predict" class="button" />
+            </form>
 
 
-    </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Agro Predictor. All rights reserved.</p>
+    </footer>
 </body>
 
 <script language="javascript">print_state("sts");</script>
@@ -63,4 +79,47 @@
 </h1>
 {{predicted_value}}
 {% endif %}
+<script>
+    function myFunction() {
+        var x = document.getElementById("n");
+        if (x.className === "navigation") {
+            animateOutNav();
+            gsap.to(".navigation", {
+                onComplete: function () {
+                    x.className = "responsive";
+                },
+            });
+        } else {
+            x.className = "navigation";
+            animateInNav();
+        }
+
+        var y = document.getElementById("col");
+        if (y.className === "col-show") {
+            y.className = "col-remove";
+        } else {
+            y.className = "col-show";
+        }
+    }
+    function animateInNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.from(".navigation li", {
+            X: "+=100",
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+        });
+    }
+
+    function animateOutNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.to(".navigation li", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+        });
+    }</script>
+
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Website</title>
     <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -16,28 +28,29 @@
                 <h1>Argo Predictor</h1>
             </div>
             <nav class="responsive flex-item" id="n">
-                <li><a href="#" style="color: blue;">Home</a></li>
-                <li><a href="#">Weather</a></li>
-                <li><a href="#">Crop Predictor</a></li>
+                <li id="curr"><a href="#">Home</a></li>
+                <li><a href="predicted.html">Crop Predictor</a></li>
                 <li><a href="#">Price Predictor</a></li>
                 <li><a href="#">About</a></li>
             </nav>
-            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem;" onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem;"
+                onclick="myFunction()">&#9776;</a>
         </div>
 
-        <div class="main">
-            <div>
+        <div class="main hidden">
+            <div class="data">
                 <h2>Agro Predictor</h2>
                 <p>Get personalized recommendations for fertilizer and crops based on your land's characteristics.</p>
             </div>
-            <div class="imghome"><img src="static/assets/doct.webp" alt=""></div>
+            <div class="imghome"><img  src="static/assets/8400.webp" alt=""></div>
+     
         </div>
         <div id="col" class="col-remove"></div>
     </section>
     <section class="services">
         <h2>Our <span>Services</span></h2>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="fade-down-right">
                 <img src="static/assets/cards/crop.png" alt="">
                 <div class="info">
                     <h4>Crop Finder</h4>
@@ -46,30 +59,86 @@
                 </div>
 
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-down-left">
                 <img src="static/assets/cards/cost.jpg" alt="">
                 <div class="info">
-                    <h4>Yield Calculator</h4>
-                    <p>Calculate your Yield of the crop you are gonna grow, have a clear idea of your crop Yield.</p>
+                    <h4>Finance Calculator</h4>
+                    <p>Calculate your expenses before investing, have a clear idea of your crops.</p>
                     <button><a href="forms/index.html">Click me</a></button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" data-aos="fade-in">
         <div class="content">
             <h2>About Us</h2>
-            <p>Welcome to our agro website, dedicated to providing farmers and agricultural enthusiasts with valuable
-                insights and predictions for optimizing crop cultivation and fertilizer usage. Our mission is to empower
-                farmers with data-driven recommendations that enhance crop yield, profitability, and sustainability.</p>
-            <p>With our advanced algorithms and machine learning models, we analyze soil quality, climate conditions,
-                and historical data to offer personalized advice tailored to your specific land and crop requirements.
-                Whether you're a small-scale farmer or a large agricultural enterprise, our tools and recommendations
-                can help you make informed decisions that benefit both your crops and the environment.</p>
-            <p>Our team of agricultural experts, data scientists, and software engineers is passionate about
-                revolutionizing the way farming is approached. We strive to bridge the gap between traditional farming
-                practices and modern technology, ensuring that farmers have access to the latest innovations and
-                insights to thrive in today's agricultural landscape.</p>
+            <div class="aboutmain">
+                <div class="left" data-aos="fade-down-left">
+                    <div>
+                        <div class="image">
+                            <img src="static/assets/m.png" alt="">
+                        </div>
+                        <div class="infoabout">
+                            <h5>Manav Gupta</h5>
+                            <h6>Data scientists</h6>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>Our website employs advanced data analysis techniques to provide personalized crop
+                            recommendations based on your soil's unique properties. Using sophisticated algorithms, we
+                            analyze key soil characteristics such as pH levels, nutrient content, and moisture levels.
+                            By comparing this data against a vast database of crop requirements and soil preferences, we
+                            can accurately predict which crops are best suited for your soil. Our goal is to empower
+                            farmers and gardeners with the information they need to maximize yields, improve soil
+                            health, and make informed planting decisions.</p>
+                    </div>
+                </div>
+
+                <div class="vertical-ruler"></div>
+                <div class="right" data-aos="fade-down-right">
+                    <div>
+                        <div class="image">
+                            <img src="static/assets/h.png" alt="">
+                        </div>
+
+                        <div class="infoabout">
+                            <h5>Harman Deep Singh</h5>
+                            <h6>Web Developer</h6>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            Our website offers a user-friendly interface for predicting the ideal crop for your soil.
+                            Through a seamless blend of HTML, CSS, and JavaScript, we provide a visually appealing and
+                            interactive experience. Users can input their soil data, such as pH levels, nutrient
+                            content, and moisture levels, into our intuitive interface. Our algorithm then processes
+                            this information to generate personalized crop recommendations. The results are displayed in
+                            a clear and informative manner, allowing users to make informed decisions about their crops.
+                            With our website, optimizing crop selection for your soil has never been easier.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down-top">
+                <p>Welcome to our agro website, dedicated to providing farmers and agricultural enthusiasts with
+                    valuable
+                    insights and predictions for optimizing crop cultivation and fertilizer usage. Our mission is to
+                    empower
+                    farmers with data-driven recommendations that enhance crop yield, profitability, and sustainability.
+                </p>
+                <p>With our advanced algorithms and machine learning models, we analyze soil quality, climate
+                    conditions,
+                    and historical data to offer personalized advice tailored to your specific land and crop
+                    requirements.
+                    Whether you're a small-scale farmer or a large agricultural enterprise, our tools and
+                    recommendations
+                    can help you make informed decisions that benefit both your crops and the environment.</p>
+                <p>Our team of agricultural experts, data scientists, and software engineers is passionate about
+                    revolutionizing the way farming is approached. We strive to bridge the gap between traditional
+                    farming
+                    practices and modern technology, ensuring that farmers have access to the latest innovations and
+                    insights to thrive in today's agricultural landscape.</p>
+            </div>
+
         </div>
 
     </section>
@@ -81,17 +150,77 @@
     function myFunction() {
         var x = document.getElementById("n");
         if (x.className === "navigation") {
-            x.className = " responsive";
+            animateOutNav();
+            gsap.to(".navigation", {
+                onComplete: function () {
+                    x.className = "responsive";
+                }
+            });
         } else {
             x.className = "navigation";
+            animateInNav();
         }
-        
-        var x = document.getElementById("col")
-        if (x.className === "col-show") {
-            x.className = "col-remove";
+
+        var y = document.getElementById("col")
+        if (y.className === "col-show") {
+            y.className = "col-remove";
         } else {
-            x.className = "col-show";
+            y.className = "col-show";
         }
-    }</script>
+    }
+
+    function animateInNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.from(".navigation li", {
+            X: "+=100",
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out"
+        });
+    }
+
+    function animateOutNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.to(".navigation li", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out"
+        });
+    }
+    const animation = gsap.from(".main", {
+        opacity: 0,
+        x: -150,
+        duration: 1.2,
+        paused: true
+    });
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animation.play();
+            } else {
+                gsap.set(".main", { x: -150 });
+                animation.reverse();
+            }
+        });
+    });
+
+    observer.observe(document.querySelector(".data"));
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({
+    offset: 160,
+    delay: 0,
+    duration: 1000,
+    easing: 'ease',
+    once: false,
+    mirror: true,
+    anchorPlacement: 'top-bottom',
+});
+
+</script>
 
 </html>

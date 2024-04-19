@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/predicted_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="/static/script.js"></script>
 </head>
 
@@ -16,18 +28,16 @@
                 <h1>Argo Predictor</h1>
             </div>
             <nav class="responsive flex-item" id="n">
-                <li><a href="/index.html" style="color: blue;">Home</a></li>
-                <li><a href="#">Weather</a></li>
-                <li><a href="./forms/index.html">Crop Predictor</a></li>
+                <li id="curr"><a href="./index.html">Home</a></li>
+                <li><a href="./crop_finder.html">Crop Predictor</a></li>
                 <li><a href="#">Price Predictor</a></li>
                 <li><a href="#">About</a></li>
             </nav>
-            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem;"
+            <a href="javascript:void(0);" class="icon flex-item" style="font-size: 1.5rem"
                 onclick="myFunction()">&#9776;</a>
         </div>
 
         <div class="main">
-
             <div class="imghome">
                 <img id="myImage" src="{{img_src}}" alt="Image">
             </div>
@@ -71,6 +81,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- <button onclick="x()">button</button> -->
             </div>
         </div>
         <div id="col" class="col-remove"></div>
@@ -78,7 +89,86 @@
     <footer>
         <p>&copy; 2024 Agro Predictor. All rights reserved.</p>
     </footer>
-
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("n");
+        if (x.className === "navigation") {
+            animateOutNav();
+            gsap.to(".navigation", {
+                onComplete: function () {
+                    x.className = "responsive";
+                },
+            });
+        } else {
+            x.className = "navigation";
+            animateInNav();
+        }
+
+        var y = document.getElementById("col");
+        if (y.className === "col-show") {
+            y.className = "col-remove";
+        } else {
+            y.className = "col-show";
+        }
+    }
+
+    function animateInNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.from(".navigation li", {
+            X: "+=100",
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+        });
+    }
+
+    function animateOutNav() {
+        gsap.set(".navigation li", { opacity: 1 });
+        gsap.to(".navigation li", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+        });
+    }
+    const names = ['Rice', 'Maize', 'Chickpea', 'Kidneybeans', 'Pigeonpeas', 'Mothbeans', 'Mungbean', 'Blackgram', 'Lentil', 'Pomegranate', 'Banana', 'Mango', 'Grapes', 'Watermelon', 'Muskmelon', 'Apple', 'Orange', 'Papaya', 'Coconut', 'Cotton', 'Jute', 'Coffee'];
+    const add = ['./img/rice.webp', './img/maize.webp', './img/chickpea.webp', './img/kidneybeans.webp', './img/pigeonpeas.jpg', './img/mothbeans.webp', './img/mungbeans.webp', './img/blackgram.webp', './img/lentil.webp', './img/pomegranate.webp', './img/banana.webp', './img/mango.webp', './img/grapes.webp', './img/watermelon.webp', './img/muskmelon.webp', './img/apple.webp', './img/orange.jpg', './img/papaya.webp', './img/coconut.webp', './img/cotton.webp', './img/jute.jpg', './img/coffee.webp'];
+    let val = 0;
+    const image = document.getElementById("image");
+    const y = document.getElementById("name");
+
+    function x() {
+        val++;
+        if (val >= names.length) val = 0;
+        image.src = add[val];
+        y.innerHTML = names[val];
+        updateData(val);
+    }
+
+    function updateData(index) {
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const dataIndex = index % data.length;
+                const content = data[dataIndex].content;
+                const cropInfo = data[dataIndex]['crop-info'];
+
+                document.querySelector('.content').textContent = content;
+
+                for (let i = 1; i <= Object.keys(cropInfo).length; i++) {
+                    const rowKey = 'row' + i;
+                    const heading = cropInfo[rowKey].heading;
+                    const values = cropInfo[rowKey].values;
+                    document.querySelector(`.row${i} .heading`).textContent = heading;
+                    document.querySelector(`.row${i} .values`).textContent = values;
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+
+    
+</script>
 
 </html>
