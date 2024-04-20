@@ -1,4 +1,3 @@
-from turtle import title
 from flask import Flask,request,render_template
 import numpy as np
 import pandas as pd
@@ -33,11 +32,6 @@ rf_model = pickle.load(open(r"RandomForest.pkl",'rb'))
 def home():
     title = 'Harvestify - Home'
     return render_template('index.html', title=title)
-
-@ app.route('/yield.html')
-def yield_pred():
-    title = 'Yield - Page'
-    return render_template('yield.html', title=title)
 
 @app.route('/crop_finder.html')
 def crop_rec():
