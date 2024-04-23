@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop</title>
     <link rel="stylesheet" href="/static/predicted_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -27,6 +19,7 @@
             <div class="logo flex-item grow">
                 <h1>Argo Predictor</h1>
             </div>
+            <div id="col" class="col-remove"></div>
             <nav class="responsive flex-item" id="n">
                 <li id="curr"><a href="./index.html">Home</a></li>
                 <li><a href="./crop_finder.html">Crop Predictor</a></li>
@@ -84,7 +77,6 @@
                 <!-- <button onclick="x()">button</button> -->
             </div>
         </div>
-        <div id="col" class="col-remove"></div>
     </section>
     <footer>
         <p>&copy; 2024 Agro Predictor. All rights reserved.</p>
