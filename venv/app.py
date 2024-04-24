@@ -48,6 +48,7 @@ def predict():
         ph = request.form['ph']
         rainfall_In_mm = request.form['rainfall_In_mm']
 
+
         feature = np.array([[Nitrogen,P,K,temperature,humidity,ph,rainfall_In_mm]])
         
         predicted_value = rf_model.predict(feature)
