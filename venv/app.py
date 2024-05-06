@@ -1,8 +1,10 @@
+from turtle import title
 from flask import Flask,request,render_template
 import numpy as np
 import pandas as pd
 import pickle
 import json
+
 
 # loading crop image source json file
 with open('static/crop_image_src.json') as user_file:
@@ -24,14 +26,39 @@ with open('static/crop_name.json') as file:
 # creating flask app
 app = Flask(__name__)
 
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
 # loading Models
 rf_model = pickle.load(open(r"RandomForest.pkl",'rb'))
+dtr = pickle.load(open('dtr.pkl','rb'))
+preprocessor = pickle.load(open('preprocessor.pkl','rb'))
+
 
 
 @ app.route('/')
 def home():
     title = 'Harvestify - Home'
     return render_template('index.html', title=title)
+
+@app.route('/yield.html')
+def yield_page():
+    return render_template('/yield.html')
+
+@app.route("/yield",methods=['GET','POST'])
+def yield_pred():
+    if request.method == 'POST':
+        year = request.form['year']
+        average_rain_fall_mm_per_year = request.form['average_rain_fall_mm_per_year']
+        pesticides_tonnes = request.form['pesticides_tonnes']
+        avg_temp = request.form['avg_temp']
+        area = request.form['area']
+        item  = request.form['item']
+
+        features = np.array([[year,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,area,item]],dtype=object)
+        transformed_features = preprocessor.transform(features)
+        prediction = dtr.predict(features).reshape(1,-1)
+
+        return render_template('yield.html',prediction = prediction)
 
 @app.route('/crop_finder.html')
 def crop_rec():
