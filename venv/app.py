@@ -26,6 +26,8 @@ app = Flask(__name__)
 
 # loading Models
 rf_model = pickle.load(open(r"RandomForest.pkl",'rb'))
+dtr = pickle.load(open('dtr.pkl','rb'))
+preprocessor = pickle.load(open('preprocessor.pkl','rb'))
 
 
 @ app.route('/')
@@ -68,6 +70,28 @@ def predict():
     predicted_crop_info = crop_summary[predicted_crop_index]
 
     return render_template('/predicted.html', predicted_value=str(predicted_value[0]) , img_src = img_src, crop_info = predicted_crop_info)
+
+
+@app.route('/yield.html')
+def yield_page():
+    return render_template('/yield.html')
+
+@app.route('/yield',methods=['POST'])
+def predict_yield():
+    if request.method == 'POST':
+        Year = request.form['Year']
+        average_rain_fall_mm_per_year = request.form['average_rain_fall_mm_per_year']
+        pesticides_tonnes = request.form['pesticides_tonnes']
+        avg_temp = request.form['avg_temp']
+        country = request.form['country']
+        crop  = request.form['crop']
+
+        features = np.array([[Year,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,country,crop]],dtype=object)
+        transformed_features = preprocessor.transform(features)
+        prediction = dtr.predict(transformed_features).reshape(1,-1)
+
+        return render_template('/yield.html',prediction=prediction)
+
 
 # python main
 if __name__=='__main__':
