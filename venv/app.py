@@ -54,7 +54,7 @@ def yield_pred():
         area = request.form['area']
         item  = request.form['item']
 
-        features = np.array([[year,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,item]],dtype=object)
+        features = np.array([[year,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,area,item]],dtype=object)
         transformed_features = preprocessor.transform(features)
         prediction = dtr.predict(features).reshape(1,-1)
 
