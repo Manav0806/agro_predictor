@@ -56,9 +56,9 @@ def yield_pred():
 
         features = np.array([[year,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,area,item]],dtype=object)
         transformed_features = preprocessor.transform(features)
-        prediction = dtr.predict(features).reshape(1,-1)
+        prediction = dtr.predict(transformed_features).reshape(1,-1)
 
-        return render_template('yield.html',prediction = prediction)
+        return render_template('yield.html',prediction = prediction[0])
 
 @app.route('/crop_finder.html')
 def crop_rec():
