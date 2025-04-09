@@ -39,7 +39,7 @@ https://github.com/Harman8815/Agro_Predictor-/assets/115714095/795e165a-9f5a-452
          
 ## 🤵 Owner
 
-- **Data Scientis:** [Manav Gupta](https://github.com/Manav0806)
+- **Machine Learning and Data Analysis:** [Manav Gupta](https://github.com/Manav0806)
 - **Web Development:** [Harman Deep Singh](https://github.com/Harman8815)
 
 
